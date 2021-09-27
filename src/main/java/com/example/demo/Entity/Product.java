@@ -5,7 +5,6 @@ import javax.persistence.*;
 @Entity
 @Table(name = "ProductS")
 public class Product {
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
@@ -14,7 +13,14 @@ public class Product {
     public Product() {
     }
 
-    public int getId() {
+    public Product(int id, String name, String email, String location) {
+	super();
+	this.id = id;
+	this.name = name;
+	this.email = email;
+	this.location = location;
+}
+	public int getId() {
         return id;
     }
 
