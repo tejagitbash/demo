@@ -21,6 +21,9 @@ public class Product {
         System.out.println("test");
 
     }
+    public void email() {
+    	
+    }
 
     public Product(int id, String name, String email, String location) {
 	super();
