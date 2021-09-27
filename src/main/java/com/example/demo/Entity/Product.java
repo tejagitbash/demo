@@ -19,7 +19,10 @@ public class Product {
 	this.name = name;
 	this.email = email;
 	this.location = location;
-}
+} 
+	public void demo(){
+		System.out.println("Success");
+	}
 	public int getId() {
         return id;
     }
