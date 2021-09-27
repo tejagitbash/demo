@@ -25,10 +25,10 @@ public class ProductConData {
     public Product getUsers(@PathVariable int id) {
             return service.get(id);
     }
-//    @GetMapping("user/{name}")
-//    public Product getName(@PathVariable String name) {
-//        return service.(name);
-//    }
+    @GetMapping("user/{name}")
+    public Product getName(@PathVariable String name) {
+        return service.getName(name);
+    }
     @DeleteMapping("/delete/{id}")
     public String delete(@PathVariable int id) {
          return service.delete(id);
