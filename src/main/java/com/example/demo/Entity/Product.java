@@ -12,9 +12,14 @@ public class Product {
 
     public Product() {
     }
+
     public void name()
     {
     	System.out.println("name");
+    }
+    public void data() {
+        System.out.println("test");
+
     }
 
     public Product(int id, String name, String email, String location) {

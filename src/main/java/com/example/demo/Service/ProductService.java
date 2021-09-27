@@ -12,7 +12,7 @@ public class ProductService {
     @Autowired
     private ProductRepo repo;
 
-    public Product add(Product product) {
+    public Product add(Product product)  {
         return repo.save(product);
     }
     public List<Product> addAll(List<Product> products) {
@@ -21,9 +21,9 @@ public class ProductService {
     public Product get(int id){
         return repo.findById(id).orElse(null);
     }
-//    public Product getName(String name) {
-//       return repo.finByName(name);
-//    }
+    public Product getName(String name) {
+       return repo.finByName(name);
+    }
     public String delete(int id) {
         repo.deleteById(id);
         return "this is deleted"+id;
