@@ -20,6 +20,11 @@ public class Product {
 	this.email = email;
 	this.location = location;
 } 
+	@Override
+	public String toString() {
+		return "Product [id=" + id + ", name=" + name + ", email=" + email + ", location=" + location + "]";
+	}
+
 	public void demo(){
 		System.out.println("Success");
 	}
